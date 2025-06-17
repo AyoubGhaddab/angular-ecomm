@@ -20,6 +20,9 @@ export class CartService {
       this.cart.set([...currentCart, { ...product, stock: 1 }]);
     }
   }
+  removeFromCart(product: Product) {
+    this.cart.set(this.cart().filter((p) => p.id !== product.id));
+  }
 
   constructor() { }
 }
