@@ -4,8 +4,8 @@ import { Component, signal } from '@angular/core';
   selector: 'app-header',
   imports: [],
   template: `
-    <p class="text-3xl font-bold underline">
-      {{title()}}
+    <p class="bg-slate-100 px-4 py-3 shadow-md">
+      <span>My Store</span>
     </p>
   `,
   styles: `
@@ -17,5 +17,4 @@ import { Component, signal } from '@angular/core';
   `
 })
 export class HeaderComponent {
-  title = signal('angular-ecomm');
 }
